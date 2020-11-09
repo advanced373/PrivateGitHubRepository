@@ -1,0 +1,10 @@
+[Unit]
+Description=backup
+After=network.target
+StartLimitIntervalSec=0
+[Service]
+Type=simple
+ExecStart=/usr/bin/python /home/pi/backup.py
+[Install]
+WantedBy=multi-user.target
+Alias=backup

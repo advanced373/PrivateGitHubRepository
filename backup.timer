@@ -1,0 +1,9 @@
+[Unit]
+Description=backup-timer
+
+[Timer]
+OnUnitActiveSec=60s
+OnBootSec=10s
+
+[Install]
+WantedBy=backup.target
